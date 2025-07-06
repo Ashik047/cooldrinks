@@ -1,0 +1,30 @@
+{
+  "name": "cooldrink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx @tailwindcss/cli -i ./src/input.css -o ./build/css/style.css --watch",
+    "lint:css": "stylelint src/**/*.css --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  },
+  "devDependencies": {
+    "prettier-plugin-tailwindcss": "^0.6.13",
+    "stylelint": "^16.21.1",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-order": "^7.0.0"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  }
+}

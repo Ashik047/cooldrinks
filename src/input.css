@@ -1,0 +1,127 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable-next-line import-notation */
+@import "tailwindcss";
+
+@layer utilities {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Playfair Display", serif;
+    }
+
+    /* adding the parallax effect on scroll using animation */
+
+    /* can rotation */
+    .landing__can {
+        animation-timeline: scroll();
+    }
+
+    /* downward motion of images */
+    .landing__imgs {
+        animation-timeline: scroll();
+    }
+
+    /* cloud motion */
+    .landing__cloud {
+        animation-timeline: scroll();
+    }
+
+    /* each landing page images are given different speeds at different breakpoints */
+    .landing__img1 {
+        --img-pos: 1500px;
+    }
+
+    .landing__img2 {
+        --img-pos: 1900px;
+    }
+
+    .landing__img3 {
+        --img-pos: 2300px;
+    }
+
+    @media screen and (width >=400px) {
+        .landing__img1 {
+            --img-pos: 1000px;
+        }
+
+        .landing__img2 {
+            --img-pos: 1300px;
+        }
+
+        .landing__img3 {
+            --img-pos: 1500px;
+        }
+    }
+
+    @media screen and (width >=550px) {
+        .landing__img1 {
+            --img-pos: 700px;
+        }
+
+        /* Created by Ashik Biju | 2025 | ChillSip */
+        .landing__img2 {
+            --img-pos: 900px;
+        }
+
+        .landing__img3 {
+            --img-pos: 1000px;
+        }
+    }
+}
+
+@theme {
+    /* colors */
+    --color-bg: #e0f2f1;
+    --color-text: whitesmoke;
+
+    /* imgae url */
+    --can-img: url("../img/can.png");
+
+    /* positioning the can stickers */
+    --can-label-pos1: 0 0, 0 0;
+
+    /* sticker position for rotation during scroll */
+    --can-label-pos5: 520px 0, 0 0;
+
+    /* animations */
+    --animate-parallax: parallax linear;
+    --animate-cloudleft: cloudleft linear;
+    --animate-cloudright: cloudright linear;
+    --animate-imgs: imgs linear;
+
+    /* font and clamps */
+    --font-body: "Rubik", sans-serif;
+    --landing-img: clamp(12.5rem, 7.143rem + 26.786vw, 31.25rem);
+
+    /* keyframes */
+    @keyframes parallax {
+        to {
+            background-position: var(--can-label-pos5);
+        }
+    }
+
+    @keyframes cloudleft {
+
+        to {
+            left: 500px;
+        }
+    }
+
+    @keyframes cloudright {
+
+        to {
+            right: 500px;
+        }
+    }
+
+    @keyframes imgs {
+
+        to {
+            top: var(--img-pos);
+        }
+    }
+}

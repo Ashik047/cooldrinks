@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ashik Biju">
+    <meta name="description"
+        content="ChillSip &hyphen; Where every sip is a cool escape. Explore icy drinks to refresh your soul and chill your day.">
+    <title>ChillSip | Refreshing Icy Drinks</title>
+    <!-- favicon -->
+    <link rel="icon" href="./img/favicon.png">
+    <!-- linking to tailwind -->
+    <link rel="stylesheet" href="./build/css/style.css">
+    <!-- linking to css -->
+    <link rel="stylesheet" href="./build/css/main.css">
+    <!-- linking to google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- linking to fontawesome -->
+    <script src="https://kit.fontawesome.com/47b5fa122b.js" crossorigin="anonymous"></script>
+    <!-- Animatte.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body class="relative bg-green-950 font-(family-name:--font-body)">
+    <!-- header with logo and cart -->
+    <header class="fixed top-0 z-20 flex h-[100px] w-full items-center justify-between bg-black px-10">
+        <a href="#"><img src="./img/logo.png" alt="ChillSip Logo" class="h-[75px] w-[75px]"></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping text-3xl text-white" title="Go to Cart"></i></a>
+    </header>
+    <main class="relative min-h-screen w-full">
+        <!-- landing page and about us - did together for overlaping of images using position absolute -->
+        <section class="landing animate-lan relative w-full overflow-clip pt-41 pb-18">
+            <h1
+                class="animate__animated animate__zoomInDown mb-6 bg-linear-to-b from-blue-600 to-green-600 bg-clip-text text-center text-6xl font-extrabold text-transparent sm:text-8xl">
+                ChillSip
+            </h1>
+            <p class="text-center text-2xl font-semibold text-white">
+                Where every sip is a cool escape
+            </p>
+            <p class="text-center text-2xl font-semibold text-white">
+                Explore icy drinks to refresh your soul and chill your day
+            </p>
+            <!-- landing page images -->
+            <img src="./img/land1.jpg" alt="cool drinks"
+                class="landing__imgs animate-imgs landing__img1 absolute top-55 right-0 -z-20 aspect-square w-(--landing-img) -rotate-[30deg] transform opacity-60 md:top-40 md:left-10 lg:top-70">
+            <img src="./img/land3.jpg" alt="cool drinks"
+                class="left-0transform landing__imgs animate-imgs landing__img2 absolute top-100 -z-10 aspect-square w-(--landing-img) rotate-[15deg] opacity-80 md:top-82 md:left-1/2 md:-translate-x-1/2 lg:top-60">
+            <img src="./img/land2.jpg" alt="cool drinks"
+                class="landing__imgs animate-imgs landing__img3 absolute top-145 right-0 -z-20 aspect-square w-(--landing-img) -rotate-[8deg] transform opacity-60 md:top-110 lg:top-60 lg:right-10 lg:-rotate-[12deg]">
+            <!-- order button -->
+            <a class="absolute top-170 left-1/2 h-[50px] w-[150px] -translate-x-1/2 transform rounded-lg bg-yellow-400 pt-2.5 text-center text-xl font-bold hover:cursor-pointer hover:bg-black hover:text-yellow-400"
+                href="#order">
+                Order Now
+            </a>
+            <!-- clouds -->
+            <img src="./img/cloud.png" alt="clouds"
+                class="landing__cloud animate-cloudleft absolute top-[130px] -left-[200px] z-10 aspect-3/2 w-(--landing-img)">
+            <img src="./img/cloud.png" alt="clouds"
+                class="landing__cloud animate-cloudright absolute top-[130px] -right-[200px] z-10 aspect-3/2 w-(--landing-img)">
+            <!-- about us -->
+            <h2 class="my-6 mt-120 text-center text-6xl font-extrabold text-blue-500 sm:text-5xl lg:mt-130 xl:mt-140"
+                data-aos="zoom-in-down">
+                Behind the Chill
+            </h2>
+            <p class="p-2 text-center text-xl font-semibold text-white" data-aos="zoom-in-down">
+                ChillSip started with a simple mission: to bring the coolest drinks to
+                cool people. Whether you're working hard, chilling with friends, or
+                just craving something icy and satisfying, we're here to deliver that
+                refreshing moment right to your door.
+            </p>
+            <p class="p-2 text-center text-xl font-semibold text-white" data-aos="zoom-in-down">
+                Icy-cold drinks. No lines. No waiting. Just 20 minutes to chill
+            </p>
+        </section>
+        <!-- order section -->
+        <section id="order" class="relative scroll-mt-30 overflow-clip pb-2">
+            <!-- overflow clip helps with parallax at the same time removes horizontal scrool, parallax didn.t work with overflow hidden -->
+            <div class="mt-5 mb-36 pt-2">
+                <div class="flex flex-wrap justify-evenly gap-10">
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="landing__can animate-parallax aspect-12/23 w-[150px] bg-[url(/img/cococola.jpg),url(/img/can.png)] mask-[url(/img/can.png)] bg-cover bg-position-(--can-label-pos1) mask-cover bg-blend-multiply">
+                            <!-- brought the rotation effect -->
+                        </div>
+                        <h2 class="mt-8 text-center text-2xl font-bold text-white">
+                            Coco Cola
+                        </h2>
+                        <label for="coco" class="mt-2 text-center text-xl font-bold text-white">&#8377;40</label>
+                        <input type="number" id="coco" name="coco"
+                            class="mt-8 h-[30px] w-[70px] bg-white text-center text-xl font-semibold" value="0">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="landing__can animate-parallax aspect-12/23 w-[150px] bg-[url(/img/pepsi.jpg),url(/img/can.png)] mask-[url(/img/can.png)] bg-cover bg-position-(--can-label-pos1) mask-cover bg-blend-multiply">
+                        </div>
+                        <h2 class="mt-8 text-center text-2xl font-bold text-white">
+                            Pepsi
+                        </h2>
+                        <label for="pepsi" class="mt-2 text-center text-xl font-bold text-white">&#8377;34</label>
+                        <input type="number" id="pepsi" name="pepsi"
+                            class="mt-8 h-[30px] w-[70px] bg-white text-center text-xl font-semibold" value="0">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="landing__can animate-parallax aspect-12/23 w-[150px] bg-[url(/img/seven.webp),url(/img/can.png)] mask-[url(/img/can.png)] bg-cover bg-position-(--can-label-pos1) mask-cover bg-blend-multiply">
+                        </div>
+                        <h2 class="mt-8 text-center text-2xl font-bold text-white">
+                            <span class="font-(family-name:--font-body)">7</span> UP
+                        </h2>
+                        <label for="sevenup" class="mt-2 text-center text-xl font-bold text-white">&#8377;30</label>
+                        <input type="number" id="sevenup" name="sevenup"
+                            class="mt-8 h-[30px] w-[70px] bg-white text-center text-xl font-semibold" value="0">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="landing__can animate-parallax aspect-12/23 w-[150px] bg-[url(/img/fanta.jpg),url(/img/can.png)] mask-[url(/img/can.png)] bg-cover bg-position-(--can-label-pos1) mask-cover bg-blend-multiply">
+                        </div>
+                        <h2 class="mt-8 text-center text-2xl font-bold text-white">
+                            Fanta
+                        </h2>
+                        <label for="fanta" class="mt-2 text-center text-xl font-bold text-white">&#8377;32</label>
+                        <input type="number" id="fanta" name="fanta"
+                            class="mt-8 h-[30px] w-[70px] bg-white text-center text-xl font-semibold" value="0">
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="landing__can animate-parallax aspect-12/23 w-[150px] bg-[url(/img/mirinda.jpg),url(/img/can.png)] mask-[url(/img/can.png)] bg-cover bg-position-(--can-label-pos1) mask-cover bg-blend-multiply">
+                        </div>
+                        <h2 class="mt-8 text-center text-2xl font-bold text-white">
+                            Mirinda
+                        </h2>
+                        <label for="mirinda" class="mt-2 text-center text-xl font-bold text-white">&#8377;36</label>
+                        <input type="number" id="mirinda" name="mirinda"
+                            class="mt-8 h-[30px] w-[70px] bg-white text-center text-xl font-semibold" value="0">
+                    </div>
+                    <!-- Created by Ashik Biju | 2025 | ChillSip -->
+                </div>
+                <!-- buttons -->
+                <div class="mt-18 flex justify-center gap-10 px-2">
+                    <div class="h-[50px] w-[150px] rounded-lg bg-yellow-400 pt-2.5 text-center text-xl font-bold hover:cursor-pointer hover:bg-black hover:text-yellow-400"
+                        tabindex="0">
+                        Add to Cart
+                    </div>
+                    <div class="h-[50px] w-[150px] rounded-lg bg-yellow-400 pt-2.5 text-center text-xl font-bold hover:cursor-pointer hover:bg-black hover:text-yellow-400"
+                        tabindex="0">
+                        Go to Cart
+                    </div>
+                </div>
+            </div>
+            <!-- footer images -->
+            <img src="./img/foot1.jpg" alt="cool drinks"
+                class="absolute bottom-0 -left-10 -z-10 aspect-square w-(--landing-img) rotate-12 transform object-cover opacity-60">
+            <img src="./img/foot2.jpg" alt="cool drinks"
+                class="absolute -right-10 bottom-0 -z-10 aspect-square w-(--landing-img) -rotate-12 transform object-cover opacity-60">
+        </section>
+    </main>
+    <footer class="absolute bottom-0 h-[30px] w-full">
+        <p class="text-center text-white">
+            &copy; 2025 Ashik Biju. All rights reserved.
+        </p>
+    </footer>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
