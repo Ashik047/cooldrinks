@@ -23,10 +23,9 @@
     <!-- linking to fontawesome -->
     <script src="https://kit.fontawesome.com/47b5fa122b.js" crossorigin="anonymous"></script>
     <!-- Animatte.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
 </head>
 
 <body class="relative bg-green-950 font-(family-name:--font-body)">
@@ -37,24 +36,25 @@
     </header>
     <main class="relative min-h-screen w-full">
         <!-- landing page and about us - did together for overlaping of images using position absolute -->
-        <section class="landing animate-lan relative w-full overflow-clip pt-41 pb-18">
+        <section
+            class="landing animate-lan relative w-full overflow-clip bg-[url(/img/land3.jpg)] bg-cover bg-center pt-41 pb-18">
+            <!-- landing page images -->
+            <img src="./img/foot2.jpg" alt="cool drinks"
+                class="landing__imgs animate-imgs landing__img1 absolute top-55 right-0 z-0 aspect-square w-(--landing-img) -rotate-[30deg] transform opacity-85 md:top-40 md:left-10 lg:top-70">
+            <img src="./img/land1.jpg" alt="cool drinks"
+                class="left-0transform landing__imgs animate-imgs landing__img2 absolute top-100 aspect-square w-(--landing-img) rotate-[15deg] opacity-85 md:top-82 md:left-1/2 md:-translate-x-1/2 lg:top-60">
+            <img src="./img/land2.jpg" alt="cool drinks"
+                class="landing__imgs animate-imgs landing__img3 absolute top-145 right-0 z-0 aspect-square w-(--landing-img) -rotate-[8deg] transform opacity-85 md:top-110 lg:top-60 lg:right-10 lg:-rotate-[12deg]">
             <h1
                 class="animate__animated animate__zoomInDown mb-6 bg-linear-to-b from-blue-600 to-green-600 bg-clip-text text-center text-6xl font-extrabold text-transparent sm:text-8xl">
                 ChillSip
             </h1>
-            <p class="text-center text-2xl font-semibold text-white">
+            <p class="relative z-1 text-center text-2xl font-semibold text-white">
                 Where every sip is a cool escape
             </p>
-            <p class="text-center text-2xl font-semibold text-white">
+            <p class="relative z-1 text-center text-2xl font-semibold text-white">
                 Explore icy drinks to refresh your soul and chill your day
             </p>
-            <!-- landing page images -->
-            <img src="./img/land1.jpg" alt="cool drinks"
-                class="landing__imgs animate-imgs landing__img1 absolute top-55 right-0 -z-20 aspect-square w-(--landing-img) -rotate-[30deg] transform opacity-60 md:top-40 md:left-10 lg:top-70">
-            <img src="./img/land3.jpg" alt="cool drinks"
-                class="left-0transform landing__imgs animate-imgs landing__img2 absolute top-100 -z-10 aspect-square w-(--landing-img) rotate-[15deg] opacity-80 md:top-82 md:left-1/2 md:-translate-x-1/2 lg:top-60">
-            <img src="./img/land2.jpg" alt="cool drinks"
-                class="landing__imgs animate-imgs landing__img3 absolute top-145 right-0 -z-20 aspect-square w-(--landing-img) -rotate-[8deg] transform opacity-60 md:top-110 lg:top-60 lg:right-10 lg:-rotate-[12deg]">
             <!-- order button -->
             <a class="absolute top-170 left-1/2 h-[50px] w-[150px] -translate-x-1/2 transform rounded-lg bg-yellow-400 pt-2.5 text-center text-xl font-bold hover:cursor-pointer hover:bg-black hover:text-yellow-400"
                 href="#order">
@@ -81,9 +81,10 @@
             </p>
         </section>
         <!-- order section -->
-        <section id="order" class="relative scroll-mt-30 overflow-clip pb-2">
+        <section id="order"
+            class="relative scroll-mt-30 overflow-clip bg-[url(/img/foot1.jpg)] bg-cover bg-center pb-2">
             <!-- overflow clip helps with parallax at the same time removes horizontal scrool, parallax didn.t work with overflow hidden -->
-            <div class="mt-5 mb-36 pt-2">
+            <div class="mb-36 pt-7">
                 <div class="flex flex-wrap justify-evenly gap-10">
                     <div class="flex flex-col items-center">
                         <div
@@ -155,11 +156,6 @@
                     </div>
                 </div>
             </div>
-            <!-- footer images -->
-            <img src="./img/foot1.jpg" alt="cool drinks"
-                class="absolute bottom-0 -left-10 -z-10 aspect-square w-(--landing-img) rotate-12 transform object-cover opacity-60">
-            <img src="./img/foot2.jpg" alt="cool drinks"
-                class="absolute -right-10 bottom-0 -z-10 aspect-square w-(--landing-img) -rotate-12 transform object-cover opacity-60">
         </section>
     </main>
     <footer class="absolute bottom-0 h-[30px] w-full">

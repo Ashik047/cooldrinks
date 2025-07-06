@@ -218,9 +218,6 @@
   .top-\[130px\] {
     top: 130px;
   }
-  .-right-10 {
-    right: calc(var(--spacing) * -10);
-  }
   .-right-\[200px\] {
     right: calc(200px * -1);
   }
@@ -242,11 +239,29 @@
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
+  .-z-2 {
+    z-index: calc(2 * -1);
+  }
+  .-z-3 {
+    z-index: calc(3 * -1);
+  }
   .-z-10 {
     z-index: calc(10 * -1);
   }
   .-z-20 {
     z-index: calc(20 * -1);
+  }
+  .z-0 {
+    z-index: 0;
+  }
+  .z-1 {
+    z-index: 1;
+  }
+  .z-2 {
+    z-index: 2;
+  }
+  .z-3 {
+    z-index: 3;
   }
   .z-10 {
     z-index: 10;
@@ -322,6 +337,9 @@
   }
   .w-\[150px\] {
     width: 150px;
+  }
+  .w-\[500px\] {
+    width: 500px;
   }
   .w-full {
     width: 100%;
@@ -432,6 +450,12 @@
   .bg-\[url\(\/img\/fanta\.jpg\)\,url\(\/img\/can\.png\)\] {
     background-image: url(/img/fanta.jpg),url(/img/can.png);
   }
+  .bg-\[url\(\/img\/foot1\.jpg\)\] {
+    background-image: url(/img/foot1.jpg);
+  }
+  .bg-\[url\(\/img\/land3\.jpg\)\] {
+    background-image: url(/img/land3.jpg);
+  }
   .bg-\[url\(\/img\/mirinda\.jpg\)\,url\(\/img\/can\.png\)\] {
     background-image: url(/img/mirinda.jpg),url(/img/can.png);
   }
@@ -458,6 +482,9 @@
   .bg-clip-text {
     background-clip: text;
   }
+  .bg-center {
+    background-position: center;
+  }
   .bg-position-\(--can-label-pos1\) {
     background-position: var(--can-label-pos1);
   }
@@ -481,6 +508,12 @@
   }
   .pt-2\.5 {
     padding-top: calc(var(--spacing) * 2.5);
+  }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
+  .pt-7 {
+    padding-top: calc(var(--spacing) * 7);
   }
   .pt-41 {
     padding-top: calc(var(--spacing) * 41);
@@ -543,6 +576,12 @@
   .opacity-80 {
     opacity: 80%;
   }
+  .opacity-85 {
+    opacity: 85%;
+  }
+  .opacity-100 {
+    opacity: 100%;
+  }
   .bg-blend-multiply {
     background-blend-mode: multiply;
   }
@@ -603,6 +642,16 @@
       top: calc(var(--spacing) * 110);
     }
   }
+  .md\:-right-10 {
+    @media (width >= 48rem) {
+      right: calc(var(--spacing) * -10);
+    }
+  }
+  .md\:bottom-0 {
+    @media (width >= 48rem) {
+      bottom: calc(var(--spacing) * 0);
+    }
+  }
   .md\:left-1\/2 {
     @media (width >= 48rem) {
       left: calc(1/2 * 100%);
@@ -611,6 +660,11 @@
   .md\:left-10 {
     @media (width >= 48rem) {
       left: calc(var(--spacing) * 10);
+    }
+  }
+  .md\:w-\(--landing-img\) {
+    @media (width >= 48rem) {
+      width: var(--landing-img);
     }
   }
   .md\:-translate-x-1\/2 {
