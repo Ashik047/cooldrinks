@@ -25,52 +25,27 @@
         animation-timeline: scroll();
     }
 
-    /* cloud motion */
-    .landing__cloud {
-        animation-timeline: scroll();
-    }
-
     /* each landing page images are given different speeds at different breakpoints */
     .landing__img1 {
-        --img-pos: 1500px;
-    }
-
-    .landing__img2 {
-        --img-pos: 1900px;
+        --img-pos: clamp(75rem, 259.821rem + -205.357vw, 218.75rem);
+        --tran-x: -300%;
+        --rot-ang: -30deg;
     }
 
     .landing__img3 {
-        --img-pos: 2300px;
+        --img-pos: clamp(75rem, 259.821rem + -205.357vw, 218.75rem);
+        --tran-x: 200%;
+        --rot-ang: 30deg;
+
     }
 
-    @media screen and (width >=400px) {
-        .landing__img1 {
-            --img-pos: 1000px;
-        }
+    .landing__img2 {
+        --img-pos: clamp(93.75rem, 294.643rem + -223.214vw, 250rem);
+        --tran-x: 0;
+        --rot-ang: 0deg;
 
-        .landing__img2 {
-            --img-pos: 1300px;
-        }
-
-        .landing__img3 {
-            --img-pos: 1500px;
-        }
     }
 
-    @media screen and (width >=550px) {
-        .landing__img1 {
-            --img-pos: 700px;
-        }
-
-        /* Created by Ashik Biju | 2025 | ChillSip */
-        .landing__img2 {
-            --img-pos: 900px;
-        }
-
-        .landing__img3 {
-            --img-pos: 1000px;
-        }
-    }
 }
 
 @theme {
@@ -89,13 +64,12 @@
 
     /* animations */
     --animate-parallax: parallax linear;
-    --animate-cloudleft: cloudleft linear;
-    --animate-cloudright: cloudright linear;
     --animate-imgs: imgs linear;
 
     /* font and clamps */
     --font-body: "Rubik", sans-serif;
     --landing-img: clamp(12.5rem, 7.143rem + 26.786vw, 31.25rem);
+    --top-pos: clamp(16.75rem, 30.571rem + -15.357vw, 27.5rem);
 
     /* keyframes */
     @keyframes parallax {
@@ -104,24 +78,11 @@
         }
     }
 
-    @keyframes cloudleft {
-
-        to {
-            left: 500px;
-        }
-    }
-
-    @keyframes cloudright {
-
-        to {
-            right: 500px;
-        }
-    }
-
     @keyframes imgs {
 
         to {
             top: var(--img-pos);
+            transform: rotate(var(--rot-ang)) translateX(var(--tran-x));
         }
     }
 }

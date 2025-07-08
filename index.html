@@ -12,8 +12,6 @@
     <link rel="icon" href="./img/favicon.png">
     <!-- linking to tailwind -->
     <link rel="stylesheet" href="./build/css/style.css">
-    <!-- linking to css -->
-    <link rel="stylesheet" href="./build/css/main.css">
     <!-- linking to google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,11 +38,11 @@
             class="landing animate-lan relative w-full overflow-clip bg-[url(/img/land3.jpg)] bg-cover bg-center pt-41 pb-18">
             <!-- landing page images -->
             <img src="./img/foot2.jpg" alt="cool drinks"
-                class="landing__imgs animate-imgs landing__img1 absolute top-55 right-0 z-0 aspect-square w-(--landing-img) -rotate-[30deg] transform opacity-85 md:top-40 md:left-10 lg:top-70">
-            <img src="./img/land1.jpg" alt="cool drinks"
-                class="left-0transform landing__imgs animate-imgs landing__img2 absolute top-100 aspect-square w-(--landing-img) rotate-[15deg] opacity-85 md:top-82 md:left-1/2 md:-translate-x-1/2 lg:top-60">
+                class="landing__imgs animate-imgs landing__img3 absolute top-(--top-pos) left-1/2 z-0 aspect-square w-(--landing-img) -translate-x-0 rotate-12 transform opacity-80">
             <img src="./img/land2.jpg" alt="cool drinks"
-                class="landing__imgs animate-imgs landing__img3 absolute top-145 right-0 z-0 aspect-square w-(--landing-img) -rotate-[8deg] transform opacity-85 md:top-110 lg:top-60 lg:right-10 lg:-rotate-[12deg]">
+                class="landing__imgs animate-imgs landing__img1 absolute top-(--top-pos) left-1/2 z-0 aspect-square w-(--landing-img) -translate-x-1/1 -rotate-12 transform opacity-80">
+            <img src="./img/land1.jpg" alt="cool drinks"
+                class="landing__imgs animate-imgs landing__img2 absolute top-(--top-pos) left-1/2 aspect-square w-(--landing-img) -translate-x-1/2 transform opacity-95">
             <h1
                 class="animate__animated animate__zoomInDown mb-6 bg-linear-to-b from-blue-600 to-green-600 bg-clip-text text-center text-6xl font-extrabold text-transparent sm:text-8xl">
                 ChillSip
@@ -60,11 +58,6 @@
                 href="#order">
                 Order Now
             </a>
-            <!-- clouds -->
-            <img src="./img/cloud.png" alt="clouds"
-                class="landing__cloud animate-cloudleft absolute top-[130px] -left-[200px] z-10 aspect-3/2 w-(--landing-img)">
-            <img src="./img/cloud.png" alt="clouds"
-                class="landing__cloud animate-cloudright absolute top-[130px] -right-[200px] z-10 aspect-3/2 w-(--landing-img)">
             <!-- about us -->
             <h2 class="my-6 mt-120 text-center text-6xl font-extrabold text-blue-500 sm:text-5xl lg:mt-130 xl:mt-140"
                 data-aos="zoom-in-down">
@@ -127,6 +120,7 @@
                         <h2 class="mt-8 text-center text-2xl font-bold text-white">
                             Fanta
                         </h2>
+                        <!-- Created by Ashik Biju | 2025 | ChillSip -->
                         <label for="fanta" class="mt-2 text-center text-xl font-bold text-white">&#8377;32</label>
                         <input type="number" id="fanta" name="fanta"
                             class="mt-8 h-[30px] w-[70px] bg-white text-center text-xl font-semibold" value="0">
@@ -142,7 +136,6 @@
                         <input type="number" id="mirinda" name="mirinda"
                             class="mt-8 h-[30px] w-[70px] bg-white text-center text-xl font-semibold" value="0">
                     </div>
-                    <!-- Created by Ashik Biju | 2025 | ChillSip -->
                 </div>
                 <!-- buttons -->
                 <div class="mt-18 flex justify-center gap-10 px-2">
